@@ -6,7 +6,7 @@
     background-color: lightgrey;
 }
 
-img {
+#img {
     display: block;
     height: 200px;
     width: 200px;
@@ -72,7 +72,7 @@ ol, ul{
     display: block;
 }
 
-#about-me h2, #portfolio h2, #contact-info h2{
+#about-me h2, #portfolio, #contact-info h2{
     box-sizing: border-box;
     color:white;
     display: flex;
@@ -87,4 +87,80 @@ ol, ul{
     margin-right: auto;
     margin-top: 5px;
     width: 500px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 20px;
+    padding-bottom: 5px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+.img-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    margin: 2px;
+    padding: 5px;
+    border: 2px;
+    border-color: black;
+    outline: 2px solid;
+    outline-offset: -4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.img-card:hover {
+    box-shadow: inset 0px 0px 8px, 0 0 15px;
+}
+
+.portfolio-img{
+    display: block;
+    height: 300px;
+    width: 400px;
+}
+
+#portfolio-img-1{
+    display: block;
+    height: 375px;
+    width: 550px;
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio, h2, #about-me h2, #portfolio, #contact-info h2{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio-img, #portfolio-img-1{
+        width: 50%;
+        height: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-img, #portfolio-img-1{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio, h2, #about-me h2, #portfolio, #contact-info h2{
+        width: 100%;
+    }
 }
