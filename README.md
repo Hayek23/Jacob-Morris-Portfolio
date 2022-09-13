@@ -6,5 +6,4 @@ In this challenge i was tasked with creating a personal website for myself. Duri
 ![photo-two](./assets/personal-site-ss-2.png)
 
 ## Links
-https://github.com/Hayek23/Module-2-Challenge
 https://hayek23.github.com/Module-2-Challenge
