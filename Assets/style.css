@@ -123,7 +123,7 @@ ol, ul{
 }
 
 .img-card:hover {
-    box-shadow: inset 0px 0px 8px, 0 0 15px;
+    box-shadow: inset 0px 0px 3px, 0 0 15px;
 }
 
 .portfolio-img{
@@ -145,11 +145,18 @@ ol, ul{
 }
 
 @media screen and (max-width: 992px) {
-    .portfolio-img, #portfolio-img-1{
-        width: 50%;
-        height: 50%;
+    .portfolio-img{
+        width: 300px;
+        height: 200px;
     }
     
+}
+
+@media screen and (max-width: 992px) {
+    #portfolio-img-1{
+        width: 614px;
+        height: 375px;
+    }
 }
 
 @media screen and (max-width: 768px) {
